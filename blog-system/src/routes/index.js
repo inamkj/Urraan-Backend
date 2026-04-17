@@ -13,7 +13,7 @@ registerRoute('GET', '/', (req, res) => {
 
 registerRoute('GET', '/test', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'application/json' })
-  res.end(JSON.stringify({ message: 'Test route working' }))
+  res.end(JSON.stringify({ message: 'Test route is working' }))
 })
 
 registerRoute('POST', '/signup', signupController);
