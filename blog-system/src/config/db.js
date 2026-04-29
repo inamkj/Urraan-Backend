@@ -4,7 +4,7 @@ const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017';
 const client = new MongoClient(uri);
 
 let db;
-let isConnected = false;
+
 
 async function connectDB() {
     try {
